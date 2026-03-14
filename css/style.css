@@ -722,7 +722,7 @@ color:#aaa;
 .servicios-page{
 background:#0a0a0a;
 color:white;
-font-family:'Playfair Display', serif;
+font-family: uppercase
 }
 
 
@@ -740,6 +740,7 @@ font-size:14px;
 margin-bottom:10px;
 padding-top:60px;
 text-align:center;
+text-transform:uppercase;
 }
 
 .servicios-header h1{
@@ -747,6 +748,8 @@ font-size:70px;
 letter-spacing:6px;
 font-weight:300;
 margin-bottom:20px;
+text-transform: 'Playfair Display', serif;
+
 }
 
 .linea-servicios{
@@ -1354,4 +1357,279 @@ border: none;
 
 .navbar-toggler-icon{
 filter: invert(1);
+}
+
+/* NAVBAR STYLE MODELS */
+
+.custom-navbar{
+background:#000;
+padding:15px 0;
+transition:all 0.3s ease;
+}
+
+.nav-container{
+display:flex;
+align-items:center;
+justify-content:space-between;
+}
+
+/* LOGO */
+
+.logo img{
+height:45px;
+width:auto;
+}
+
+/* MENU */
+
+.menu{
+gap:25px;
+}
+
+.navbar-nav .nav-link{
+color:#fff;
+font-family:'Montserrat', sans-serif;
+font-size:14px;
+letter-spacing:2px;
+text-transform:uppercase;
+transition:0.3s;
+}
+
+/* HOVER elegante */
+
+.navbar-nav .nav-link:hover{
+color:#c9a227;
+}
+
+/* ICONO HAMBURGUESA */
+
+.navbar-toggler{
+border:none;
+}
+
+.navbar-toggler-icon{
+filter:invert(1);
+}
+
+/* NAVBAR STYLE MODELS */
+
+.navbar-stylemodels{
+
+background: rgba(0,0,0,0.65); /* transparencia */
+backdrop-filter: blur(6px); /* efecto vidrio elegante */
+
+padding:15px 0;
+
+border-bottom:1px solid #c9a227; /* linea dorada */
+
+transition: all 0.3s ease;
+
+}
+
+/* CONTENEDOR */
+
+.nav-container{
+display:flex;
+align-items:center;
+justify-content:space-between;
+}
+
+/* LOGO */
+
+.logo img{
+height:45px;
+width:auto;
+}
+
+/* MENU */
+
+.navbar-nav{
+gap:25px;
+}
+
+/* LINKS */
+
+.navbar-stylemodels .nav-link{
+
+color:white;
+font-family:'Montserrat', sans-serif;
+
+font-size:14px;
+
+letter-spacing:2px;
+
+text-transform:uppercase;
+
+transition:0.3s;
+
+}
+
+/* HOVER */
+
+.navbar-stylemodels .nav-link:hover{
+
+color:#c9a227;
+
+}
+
+/* BOTON HAMBURGUESA */
+
+.navbar-toggler{
+border:none;
+}
+
+.navbar-toggler-icon{
+filter:invert(1);
+}
+
+.hero{
+margin-top:80px;
+}
+
+/* CONTENEDOR DEL NAVBAR MÁS COMPACTO */
+
+.navbar-container{
+
+max-width:1200px;   /* ancho igual al diseño original */
+
+margin:auto;
+
+padding-left:0px;
+padding-right:0px;
+
+display:flex;
+align-items:center;
+justify-content:space-between;
+
+}
+
+.navbar-nav{
+
+gap:1px;
+
+}
+
+/* NAVBAR MÁS DELGADO */
+
+.navbar-stylemodels{
+
+background: rgba(0,0,0,0.65);
+backdrop-filter: blur(2px);
+
+padding:2px 0;   /* antes estaba en 15px */
+
+border-bottom:1px solid #c9a227;
+
+transition:all 0.3s ease;
+
+}
+
+
+.navbar-stylemodels .nav-link{
+
+color:white;
+
+font-family:'Montserrat', sans-serif;
+
+font-size:13px;
+
+letter-spacing:2px;
+
+text-transform:uppercase;
+
+padding:6px 12px;  /* reduce altura */
+
+}
+
+.navbar-container{
+
+max-width:1140px;
+
+margin:auto;
+
+display:flex;
+align-items:center;
+justify-content:space-between;
+
+}
+
+.navbar-stylemodels{
+transition: top 0.4s ease, background 0.3s ease;
+}
+
+/* LINKS DEL MENU */
+
+.navbar-stylemodels .nav-link{
+position: relative;
+color: white;
+font-family: 'Montserrat', sans-serif;
+margin-left: 25px;
+}
+
+/* LINEA OCULTA */
+
+.navbar-stylemodels .nav-link::after{
+content: "";
+position: absolute;
+left: 0;
+bottom: -5px;
+width: 0%;
+height: 2px;
+background-color: #c9a227;
+transition: width 0.3s ease;
+}
+
+/* ANIMACION AL PASAR EL MOUSE */
+
+.navbar-stylemodels .nav-link:hover::after{
+width: 100%;
+}
+
+/* LINKS DEL MENU */
+
+.navbar-stylemodels .nav-link{
+position: relative;
+color: white;
+font-family: 'Montserrat', sans-serif;
+margin-left: 25px;
+padding-bottom: 5px;
+}
+
+/* LINEA ANIMADA DESDE EL CENTRO */
+
+.navbar-stylemodels .nav-link::after{
+content: "";
+position: absolute;
+left: 50%;
+bottom: 0;
+width: 0;
+height: 1px;
+background-color: #c9a227;
+transition: all 0.35s ease;
+transform: translateX(-50%);
+}
+
+/* HOVER */
+
+.navbar-stylemodels .nav-link:hover::after{
+width: 100%;
+}
+
+/* PAGINA ACTIVA */
+
+.navbar-stylemodels .nav-link.active::after{
+width: 100%;
+}
+
+.navbar-stylemodels .nav-link.active{
+color: #c9a227;
+}
+
+.subtitle{
+font-family: 'Montserrat', sans-serif;
+letter-spacing: 4px;
+font-size: 14px;
+color: #c9a227;
+text-transform: uppercase;
+margin-bottom: 15px;
 }

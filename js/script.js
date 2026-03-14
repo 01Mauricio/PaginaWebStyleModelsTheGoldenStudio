@@ -1,51 +1,69 @@
-console.log("Style Models website loaded");
+/* CARGAR MENU GLOBAL */
 
-let header = document.querySelector(".header");
+fetch("menu.html")
+.then(response => response.text())
+.then(data => {
+
+document.getElementById("menu-container").innerHTML = data;
+
+/* DESPUES DE CARGAR EL MENU */
+
+const header = document.querySelector(".navbar-stylemodels");
 
 let lastScroll = 0;
 let hideTimer;
 
-// OCULTAR CUANDO HACES SCROLL HACIA ABAJO
+/* detectar si es pantalla grande */
+
+function isDesktop(){
+    return window.innerWidth > 992;
+}
+
+/* OCULTAR AL BAJAR SCROLL */
+
 window.addEventListener("scroll", function(){
+
+    if(!isDesktop()) return;
 
     let currentScroll = window.pageYOffset;
 
     if(currentScroll > lastScroll){
-        header.classList.add("hide");
+        header.style.top = "-90px";
     }else{
-        header.classList.remove("hide");
+        header.style.top = "0";
     }
 
     lastScroll = currentScroll;
 
     resetTimer();
+
 });
 
+/* OCULTAR SI NO SE USA */
 
-// OCULTAR SI NO SE USA EN 2 SEGUNDOS
 function resetTimer(){
+
+    if(!isDesktop()) return;
 
     clearTimeout(hideTimer);
 
     hideTimer = setTimeout(function(){
-        header.classList.add("hide");
+        header.style.top = "-90px";
     },2000);
 
 }
 
+/* MOSTRAR CUANDO EL CURSOR PASA ARRIBA */
 
-// MOSTRAR CUANDO EL CURSOR PASA POR ARRIBA
-header.addEventListener("mouseenter", function(){
-    header.classList.remove("hide");
-});
-
-
-// MOSTRAR SI EL CURSOR ESTA EN LA PARTE SUPERIOR
 document.addEventListener("mousemove", function(e){
 
+    if(!isDesktop()) return;
+
     if(e.clientY < 80){
-        header.classList.remove("hide");
+        header.style.top = "0";
         resetTimer();
     }
+
+});
 
 });
