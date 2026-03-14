@@ -482,6 +482,192 @@ padding-top:90px;
 }
 
 .oficina-img{
-max-width:400px;
-width:90%;
+max-width:350px;
+width:85%;
+}
+
+/* Separar los botones del menú en pantallas grandes */
+
+@media (min-width: 992px){
+
+.navbar-stylemodels .nav-link{
+margin-left:20px;
+margin-right:20px;
+}
+
+}
+
+
+/* CONTACTO */
+
+.contact-section{
+
+background:#000;
+color:#fff;
+padding:120px 0;
+
+}
+
+.contact-title h1{
+
+font-family:'Playfair Display', serif;
+font-size:60px;
+letter-spacing:6px;
+
+}
+
+.contact-subtitle{
+
+color:#c9a227;
+letter-spacing:4px;
+font-size:12px;
+
+}
+
+.title-line{
+
+width:60px;
+height:2px;
+background:#c9a227;
+margin:20px auto;
+
+}
+
+/* COLUMNAS */
+
+.contact-content{
+
+margin-top:80px;
+
+}
+
+.contact-info h3{
+
+font-family:'Playfair Display', serif;
+letter-spacing:3px;
+margin-bottom:20px;
+
+}
+
+.contact-info p{
+
+color:#bbb;
+line-height:1.8;
+
+}
+
+/* ITEMS */
+
+.contact-item{
+
+display:flex;
+align-items:center;
+gap:15px;
+margin-top:25px;
+
+}
+
+.icon-box{
+
+width:40px;
+height:40px;
+border:1px solid #c9a227;
+display:flex;
+align-items:center;
+justify-content:center;
+color:#c9a227;
+
+}
+
+.contact-item span{
+
+font-size:12px;
+letter-spacing:3px;
+color:#c9a227;
+
+}
+
+/* HORARIO */
+
+.hours-box{
+
+border:1px solid #333;
+padding:30px;
+margin-top:40px;
+
+}
+
+/* FORM */
+
+.contact-form input,
+.contact-form textarea{
+
+width:100%;
+background:none;
+border:none;
+border-bottom:1px solid #333;
+padding:15px 0;
+color:#fff;
+margin-bottom:25px;
+
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+
+outline:none;
+border-color:#c9a227;
+
+}
+
+/* BOTON */
+
+.btn-contact{
+
+width:100%;
+border:1px solid #c9a227;
+background:none;
+color:#c9a227;
+padding:15px;
+letter-spacing:3px;
+transition:0.3s;
+
+}
+
+.btn-contact:hover{
+
+background:#c9a227;
+color:#000;
+
+}
+
+/* FOOTER */
+
+.footer{
+
+border-top:1px solid #222;
+padding:40px 0;
+margin-top:100px;
+
+}
+
+.footer-content{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+}
+
+.footer-logo h4{
+
+color:#c9a227;
+letter-spacing:5px;
+
+}
+
+.footer-copy{
+
+color:#777;
+
 }
