@@ -1279,3 +1279,32 @@ letter-spacing:2px;
 margin-left:40px;   /* mueve el texto un poco hacia la derecha */
 max-width:520px;    /* mantiene el bloque de texto más elegante */
 }
+
+/* ===== AJUSTE POSICIÓN TEXTO SECCIÓN NOSOTROS ===== */
+
+.about .subtitle,
+.about h1{
+margin-left:60px;   /* mueve LEGADO & VISIÓN y QUIÉNES SOMOS a la derecha */
+}
+
+.about-text{
+margin-left:60px;   /* mueve todo el bloque de texto */
+max-width:520px;    /* mejora la lectura del texto */
+}
+
+/* ===== AJUSTAR POSICION IMAGEN NOSOTROS ===== */
+
+.about-image{
+margin-top:-110px; /* sube la imagen */
+}
+
+
+/* ===== MENU OCULTO AUTOMATICO ===== */
+
+.header{
+transition: transform 0.4s ease;
+}
+
+.header.hide-menu{
+transform: translateY(-100%);
+}
