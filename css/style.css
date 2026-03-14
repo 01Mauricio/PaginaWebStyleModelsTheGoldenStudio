@@ -671,3 +671,34 @@ letter-spacing:5px;
 color:#777;
 
 }
+
+.contact-social{
+
+margin-top:40px;
+display:flex;
+flex-direction:column;
+gap:10px;
+
+}
+
+.contact-social a{
+
+color:#c9a227;
+text-decoration:none;
+letter-spacing:2px;
+font-size:14px;
+transition:0.3s;
+
+}
+
+.contact-social a:hover{
+
+color:#fff;
+
+}
+
+.contact-social i{
+
+margin-right:10px;
+
+}
