@@ -1671,3 +1671,105 @@ border:1px solid #c9a227;
 .navbar-toggler-icon{
 filter: invert(1);
 }
+
+
+/* ========================= */
+/* RESPONSIVE MOVIL */
+/* ========================= */
+
+@media (max-width:768px){
+
+/* CONTENEDORES GENERALES */
+
+.about,
+.portfolio-models,
+.servicios-grid,
+.contacto-contenedor{
+padding-left:20px;
+padding-right:20px;
+width:100%;
+}
+
+/* TITULOS */
+
+.about h1,
+.portfolio-hero h1,
+.lookbook-header h1,
+.servicios-header h1,
+.contacto-header h1{
+font-size:34px;
+letter-spacing:3px;
+}
+
+/* TEXTO */
+
+.about-text{
+margin-left:0;
+max-width:100%;
+}
+
+/* GRID NOSOTROS */
+
+.about-container{
+grid-template-columns:1fr;
+}
+
+/* IMAGEN NOSOTROS */
+
+.about-image{
+margin-top:30px;
+text-align:center;
+}
+
+.about-image img{
+width:100%;
+max-width:350px;
+}
+
+/* ESTADISTICAS */
+
+.stats{
+grid-template-columns:repeat(2,1fr);
+gap:25px;
+}
+
+/* VALORES */
+
+.values{
+grid-template-columns:1fr;
+}
+
+/* PORTAFOLIO */
+
+.portfolio-grid{
+grid-template-columns:1fr;
+}
+
+/* LOOKBOOK */
+
+.lookbook-grid{
+grid-template-columns:1fr;
+}
+
+/* SERVICIOS */
+
+.servicios-grid{
+grid-template-columns:1fr;
+}
+
+/* CONTACTO */
+
+.contacto-contenedor{
+grid-template-columns:1fr;
+gap:40px;
+}
+
+/* FOOTER */
+
+.footer-contacto{
+flex-direction:column;
+text-align:center;
+gap:15px;
+}
+
+}
