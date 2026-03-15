@@ -863,3 +863,49 @@ max-width:160px;
 }
 
 }
+
+/* ESTADISTICAS STYLE MODELS */
+
+.stat-number{
+
+font-size:42px;
+font-weight:700;
+color:#c9a227;
+margin-bottom:5px;
+letter-spacing:1px;
+
+}
+
+/* texto debajo */
+
+.row.text-center p{
+
+font-size:14px;
+letter-spacing:2px;
+color:white;
+
+}
+
+/* FRASE ELEGANTE */
+
+.quote-text{
+
+font-family: "Playfair Display", serif;
+font-style: italic;
+font-size: 28px;
+color:#c9a227;
+max-width:700px;
+margin:auto;
+line-height:1.6;
+
+}
+
+.quote-author{
+
+display:block;
+margin-top:10px;
+font-style: italic;
+color:white;
+letter-spacing:1px;
+
+}
