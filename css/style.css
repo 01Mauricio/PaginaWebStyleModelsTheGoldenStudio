@@ -836,3 +836,30 @@ color:white;
 transform:translateY(-3px);
 
 }
+
+/* ESPACIADO FOOTER EN CELULAR */
+
+@media (max-width:768px){
+
+.footer-logo{
+margin-bottom:20px;
+text-align:center;
+}
+
+.footer-copy{
+margin-bottom:20px;
+}
+
+.footer-social{
+text-align:center;
+}
+
+}
+
+@media (max-width:768px){
+
+.footer-logo img{
+max-width:160px;
+}
+
+}
