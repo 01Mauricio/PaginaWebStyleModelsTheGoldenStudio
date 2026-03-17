@@ -1004,3 +1004,87 @@ letter-spacing:1px;
     letter-spacing: 7px;
     transition: all 0.3s ease;
 }
+
+@media (max-width: 768px) {
+    .lookbook-slogan::before,
+    .lookbook-slogan::after {
+        display: none;
+    }
+}
+
+.servicios-cta {
+    height: 300px;
+    background: linear-gradient(
+        rgba(0,0,0,0.85),
+        rgba(0,0,0,0.85)
+    ),
+    url("../img/hero.jpg"); /* puedes cambiar la imagen */
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    padding: 20px;
+}
+
+/* TEXTO PRINCIPAL */
+.cta-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    color: #ffffff;
+    letter-spacing: 2px;
+    max-width: 700px;
+    margin-bottom: 30px;
+}
+
+/* BOTÓN PREMIUM */
+.btn-servicios {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 12px 40px;
+    border: 1px solid #d4af37;
+    text-decoration: none;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+/* EFECTO HOVER LUJO */
+.btn-servicios:hover {
+    background: #d4af37;
+    color: #000;
+    letter-spacing: 4px;
+}
+
+/* EFECTO LÍNEA ANIMADA */
+.btn-servicios::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 0;
+    height: 1px;
+    background: #d4af37;
+    transition: 0.3s;
+    transform: translateX(-50%);
+}
+
+.btn-servicios:hover::after {
+    width: 80%;
+}
+
+.cta-text::before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 2px;
+    background: #d4af37;
+    margin: 0 auto 20px auto;
+}
